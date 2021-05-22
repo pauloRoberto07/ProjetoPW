@@ -40,6 +40,9 @@
               <li>
                 <a href="#">Contato</a>
               </li>
+              <li>
+                <a href="./login.php">Admin</a>
+              </li>
             </ul>
           </nav>
         </div>
