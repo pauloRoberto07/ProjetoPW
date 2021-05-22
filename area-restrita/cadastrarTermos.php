@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html lang="pt">
+<!DOCTYPE html>
+<html lang="pt">
   <head>
-    <title>Página Inicial</title>
+    <title>Cadatrar termos</title>
     <link rel="stylesheet" href="../css/style.css" />
     <link
       rel="stylesheet"
@@ -36,7 +38,7 @@
                 <a href="#">Home</a>
               </li>
               <li>
-                <a href="./cadastrarTermos.php">cadastrar termos</a>
+                <a href="#">cadastrar termos</a>
               </li>
               <li>
                 <a href="#">alterar termos</a>
@@ -53,41 +55,25 @@
         </div>
       </div>
     </header>
+<body>
 
-    <section class="hero">
-      <div class="container">
-        <div>
-          <h2>
-            kk Eae Ademir
-          </h2>
-          <p>
-            vamo configurá?
-          </p>
-          
-        </div>
-        <img
-          src="../images/herosectionimg.png"
-          alt=""
-          class="imgsectionhero image"
-        />
-      </div>
-    </section>
-
-    <main>
-
-      <div class="container">
-        <input type="text" class="search" placeholder="Digite o termo que deseja conferir"/>
-        <img src="../images/iconelupa.png" class="iconsearch image2" alt="Buscar"/>
-      </div>
-      <br>
-      <a href="#" class="button">Conferir</a>
-    </main>
-     
-
-    
+        <form action="../termosInsert.php" method="post">
+        
+        <label>
+        Termo: 
+        </label>
+        <input type="text" name="termo" id="termo">
+        <br>
+        <br>
+        <label>
+        Descrição do termo:
+        </label>
+        <input type="text" name="descTermo" id="descTermo">
+        <br>
+        <button type="submit">Cadastrar</button>
+        </form>
 
 
-    <script src="../js/scripts.js"></script>
-    <script src="../js/menu.js"></script>
-  </body>
+
+</body>
 </html>
