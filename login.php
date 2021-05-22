@@ -7,7 +7,7 @@
     <title>Login ADM</title>
 </head>
 <body>
-    <form action="signIn.php" method="post">
+    <form action="./validarLogin.php" method="post">
         <label>
             Usuário
         </label>
@@ -19,7 +19,7 @@
         </label>
         <input type="password" name="pwd" id="pwd">
         <br>
-        
+
         <button type="submit">Login</button>
     </form>
 </body>
