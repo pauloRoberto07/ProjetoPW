@@ -1,6 +1,6 @@
 <?php 
 
-require_once('global.php');
+require_once('Conexao.php');
 class Termo{
 
     private $idTermo;
@@ -71,7 +71,7 @@ class Termo{
 
     public function listar(){
         $conexao = Conexao::pegarConexao();
-        $querySelect = "Select nomeTermo, descTermo FROM tbtermos";
+        $querySelect = "Select nomeTermo, descTermo FROM tbtermo";
         $resultado = $conexao->query($querySelect);
         $lista = $resultado->fetchAll();
         return $lista;
