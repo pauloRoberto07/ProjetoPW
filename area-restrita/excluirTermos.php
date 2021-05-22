@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="pt">
   <head>
-    <title>Cadastrar Termos</title>
+    <title>Excluir Termos</title>
     <link rel="stylesheet" href="../css/style.css" />
     <link
       rel="stylesheet"
@@ -16,7 +16,7 @@
   </head>
   <body>
     <?php include_once('sentinela.php');?>
-    
+
         <header>
         <div class="container">
             <img

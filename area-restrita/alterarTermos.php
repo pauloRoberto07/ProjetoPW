@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="pt">
   <head>
-    <title>Cadastrar Termos</title>
+    <title>Alterar Termos</title>
     <link rel="stylesheet" href="../css/style.css" />
     <link
       rel="stylesheet"
