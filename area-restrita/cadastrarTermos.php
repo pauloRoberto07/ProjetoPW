@@ -1,9 +1,8 @@
-<!DOCTYPE html>
-<html lang="pt">
+
 <!DOCTYPE html>
 <html lang="pt">
   <head>
-    <title>Cadatrar termos</title>
+    <title>Cadastrar Termos</title>
     <link rel="stylesheet" href="../css/style.css" />
     <link
       rel="stylesheet"
@@ -35,16 +34,16 @@
           <nav>
             <ul>
               <li>
-                <a href="#">Home</a>
+                <a href="./index-restrita.php">Home</a>
               </li>
               <li>
-                <a href="#">cadastrar termos</a>
+                <a href="./cadastrarTermos.php">cadastrar termos</a>
               </li>
               <li>
-                <a href="#">alterar termos</a>
+                <a href="./alterarTermos.php">alterar termos</a>
               </li>
               <li>
-                <a href="#">excluir termos</a>
+                <a href="./excluirTermos.php">excluir termos</a>
               </li>
               
               <li>
@@ -55,7 +54,7 @@
         </div>
       </div>
     </header>
-<body>
+
 
         <form action="../termosInsert.php" method="post">
         
@@ -68,7 +67,7 @@
         <label>
         Descrição do termo:
         </label>
-        <input type="text" name="descTermo" id="descTermo">
+        <textarea name="descTermo" id="descTermo" cols="30" rows="10"></textarea>
         <br>
         <button type="submit">Cadastrar</button>
         </form>

@@ -31,18 +31,18 @@
             <div class="three"></div>
           </div>
           <nav>
-            <ul>
+          <ul>
               <li>
-                <a href="#">Home</a>
+                <a href="./index-restrita.php">Home</a>
               </li>
               <li>
                 <a href="./cadastrarTermos.php">cadastrar termos</a>
               </li>
               <li>
-                <a href="#">alterar termos</a>
+                <a href="./alterarTermos.php">alterar termos</a>
               </li>
               <li>
-                <a href="#">excluir termos</a>
+                <a href="./excluirTermos.php">excluir termos</a>
               </li>
               
               <li>
