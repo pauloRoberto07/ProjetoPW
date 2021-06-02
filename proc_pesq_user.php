@@ -1,8 +1,14 @@
 <style type="text/css">
-	a{
-		text-decoration: none;
-		
-	}
+	.abc{
+        text-decoration: none;
+        color: black;
+
+    }
+    .abc:hover{
+        font-size: 2rem; 
+        color: black;
+        font-style: italic;
+    }
 
 	ul{
 		list-style:none;
@@ -23,6 +29,6 @@ $resultado2 = mysqli_query($conn, $resultado);
 
 if(($resultado2) AND ($resultado2->num_rows != 0 )){
 	while($row = mysqli_fetch_assoc($resultado2)){
-		echo "<li><a href='?id=$row[nomeTermo]'>$row[nomeTermo]</a></li>";
+		echo "<li><a  class='abc' href='?id=$row[nomeTermo]'>$row[nomeTermo]</a></li>";
 	}
 }?>
