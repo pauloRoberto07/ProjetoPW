@@ -110,6 +110,18 @@ class Termo{
         $lista = $resultado->fetchAll();
         return $lista;
     }
+
+    public function fazJSON(){
+        $conexao = Conexao::pegarConexao();
+        $querySelect = "SELECT * FROM tbtermo";
+        $resultado = $conexao->query($querySelect);
+        $lista = $resultado->fetchAll();
+
+      
+
+        echo json_encode($lista, JSON_UNESCAPED_UNICODE);
+    }
+
 }
 
 ?>
