@@ -11,7 +11,11 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" >
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="icon" type="image/png" href="../images/logo.png"/>
     <link rel="stylesheet" href="../css/print.css" media="print">
+    <link rel="stylesheet" href="../css/admin.css">
+
+  
   </head>
   <body>
   <?php
@@ -54,40 +58,60 @@
       </div>
     </header>
 
-    <section class="hero">
-      <div class="container">
-        <div>
-          <h2>
-            kk Eae Ademir
-          </h2>
-          <p>
-            vamo configurá?
-          </p>
-          
+
+    <div class="main-block">
+      <div class="left-part">
+        <i class="fas fa-graduation-cap"></i>
+        
+        <img src="../images/herosectionimg.png">
+      
+        <div class="btn-group">
+
+
         </div>
-        <img
-          src="../images/herosectionimg.png"
-          alt=""
-          class="imgsectionhero image"
-        />
       </div>
-    </section>
+  <form action="" method="post" onsubmit="return false">
+  <h2 style="COLOR:#FFF">SELECIONE UMA DAS OPÇÕES QUE DESEJA:</h2>
+  <BR>
 
-    <main>
 
-      <div class="container">
-        <input type="text" class="search" placeholder="Digite o termo que deseja conferir"/>
-        <img src="../images/iconelupa.png" class="iconsearch image2" alt="Buscar"/>
-      </div>
-      <br>
-      <a href="#" class="button">Conferir</a>
-    </main>
-     
-
-    
+  <button onclick="ir(1)">CADASTRAR TERMO</button>
+        <BR>
+        <BR>
+        <BR>
+        <button  onclick="ir(2)"> ALTERAR TERMO</button>
+        <BR>
+        <BR>
+        <BR>
+        <button  onclick="ir(3)"> EXCLUIR TERMO</button>
+        <BR>
+        <BR>
+        <BR>
+        <button  onclick="ir(4)"> FAZER LOGOUT </button>
+      </form>
 
 
     <script src="../js/scripts.js"></script>
     <script src="../js/menu.js"></script>
+    <script>
+
+      function ir(nmr){
+
+        if(nmr == 1){
+        window.location.href = "./cadastrarTermos.php";
+
+        }else if(nmr == 2){
+        window.location.href = "./alterarTermos.php";
+
+        }else if(nmr == 3){
+          window.location.href = "./excluirTermos.php";
+        }else{
+          window.location.href =  "../logout.php"
+        }
+      }
+
+    </script>
+  
+  
   </body>
 </html>
