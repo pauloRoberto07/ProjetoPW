@@ -84,7 +84,7 @@ class Termo{
     }
     public function procurar($procura){
         $conexao = Conexao::pegarConexao();
-        $querySelect = "SELECT nomeTermo,descTermo FROM tbtermo WHERE nomeTermo LIKE '%$procura%' ORDER BY nomeTermo ASC LIMIT 1";
+        $querySelect = "SELECT nomeTermo,descTermo FROM tbtermo WHERE nomeTermo LIKE '$procura%' ORDER BY nomeTermo ASC LIMIT 1";
         $resultado = $conexao->query($querySelect);
         $lista = $resultado->fetchAll();
         return $lista;

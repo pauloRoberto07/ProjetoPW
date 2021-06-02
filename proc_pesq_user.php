@@ -16,7 +16,7 @@ $conn = mysqli_connect("localhost","root","","bdtermos");
 $termos = filter_input(INPUT_POST, 'palavra', FILTER_SANITIZE_STRING);
 
 //Pesquisar no banco de dados nome do usuario referente a palavra digitada
-$resultado = "SELECT nomeTermo FROM tbtermo WHERE nomeTermo LIKE '%$termos%' LIMIT 3";
+$resultado = "SELECT nomeTermo FROM tbtermo WHERE nomeTermo LIKE '$termos%' LIMIT 3";
 $resultado2 = mysqli_query($conn, $resultado);
 
 
